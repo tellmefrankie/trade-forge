@@ -9,7 +9,7 @@
 
 ## Demo
 
-> 🔗 **[Live Demo →](https://trade-forge-3qmesurh6-tellmefrankies-projects.vercel.app/dashboard)**
+> 🔗 **[Live Demo →](https://trade-forge-psi.vercel.app)**
 
 ## Screenshots
 

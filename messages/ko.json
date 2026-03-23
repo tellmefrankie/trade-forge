@@ -160,6 +160,62 @@
       "submit": "봇 생성"
     }
   },
+  "backtest": {
+    "title": "백테스트",
+    "description": "전략을 과거 데이터로 시뮬레이션하세요",
+    "settings": "설정",
+    "strategy": "전략",
+    "symbol": "종목",
+    "period": "기간",
+    "startDate": "시작일",
+    "endDate": "종료일",
+    "initialCapital": "초기 자본 (₩)",
+    "run": "백테스트 실행",
+    "running": "실행 중...",
+    "result": "결과",
+    "returnCurve": "수익률 곡선",
+    "strategy_line": "전략",
+    "benchmark": "단순 보유 (벤치마크)",
+    "summary": {
+      "totalReturn": "총 수익률",
+      "mdd": "최대 낙폭",
+      "trades": "거래 횟수",
+      "winRate": "승률",
+      "avgHolding": "평균 보유 기간",
+      "days": "일"
+    },
+    "createBot": "이 설정으로 봇 생성"
+  },
+  "settings": {
+    "apiKeys": {
+      "title": "API 키 관리",
+      "description": "거래소 API 키를 등록하고 관리하세요",
+      "exchange": "거래소",
+      "apiKey": "API Key",
+      "secretKey": "Secret Key",
+      "add": "키 등록",
+      "test": "연결 테스트",
+      "testSuccess": "연결 성공",
+      "delete": "삭제",
+      "registered": "등록된 키",
+      "noKeys": "등록된 API 키가 없습니다",
+      "encryption": "API 키는 AES-256으로 암호화되어 저장됩니다"
+    },
+    "alerts": {
+      "title": "알림 설정",
+      "description": "텔레그램 알림을 설정하세요",
+      "telegramToken": "텔레그램 봇 토큰",
+      "tokenPlaceholder": "123456789:AAH...",
+      "save": "저장",
+      "conditions": "알림 조건",
+      "onTrade": "체결 시",
+      "onProfit": "수익 목표 도달 시",
+      "onStopLoss": "손절 시",
+      "onError": "봇 에러 시",
+      "history": "알림 이력",
+      "noHistory": "알림 이력이 없습니다"
+    }
+  },
   "language": {
     "ko": "한국어",
     "en": "English"

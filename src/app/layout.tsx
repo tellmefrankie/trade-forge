@@ -5,6 +5,8 @@ import { DEFAULT_THEME } from '@/components/themes/theme.config';
 import ThemeProvider from '@/components/themes/theme-provider';
 import { cn } from '@/lib/utils';
 import type { Metadata, Viewport } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 import NextTopLoader from 'nextjs-toploader';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import '../styles/globals.css';
@@ -24,9 +26,12 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
     <html
-      lang='ko'
+      lang={locale}
       className='dark'
       suppressHydrationWarning
       data-theme={DEFAULT_THEME}
@@ -47,8 +52,10 @@ export default async function RootLayout({
             enableColorScheme
           >
             <Providers activeThemeValue={DEFAULT_THEME}>
-              <Toaster />
-              {children}
+              <NextIntlClientProvider messages={messages}>
+                <Toaster />
+                {children}
+              </NextIntlClientProvider>
             </Providers>
           </ThemeProvider>
         </NuqsAdapter>

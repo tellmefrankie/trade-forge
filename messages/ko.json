@@ -1,0 +1,34 @@
+{
+  "common": {
+    "appName": "TradeForge",
+    "tagline": "자동매매 모니터링 대시보드"
+  },
+  "nav": {
+    "dashboard": "대시보드",
+    "trades": "매매 내역",
+    "bots": "봇 관리",
+    "portfolio": "포트폴리오",
+    "backtest": "백테스트",
+    "settings": "설정",
+    "apiKeys": "API 키 관리",
+    "alerts": "알림 설정",
+    "trading": "트레이딩"
+  },
+  "dashboard": {
+    "title": "대시보드",
+    "description": "자동매매 트레이딩 모니터링 대시보드",
+    "totalAssets": "총 자산",
+    "todayPnl": "오늘 실현 손익",
+    "activeBots": "활성 봇",
+    "winRate": "승률",
+    "recentTrades": "최근 체결 내역",
+    "botStatus": "봇 상태",
+    "last24h": "24시간",
+    "last30d": "최근 30일",
+    "running": "실행 중"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English"
+  }
+}

@@ -71,6 +71,38 @@
     "dailyPnl": "일별 수익 현황",
     "last30d": "최근 30일"
   },
+  "portfolio": {
+    "title": "포트폴리오",
+    "description": "보유 자산 현황 및 성과 분석",
+    "totalValue": "총 자산 가치",
+    "holdings": "보유 자산",
+    "allocation": "자산 비중",
+    "table": {
+      "symbol": "종목",
+      "amount": "수량",
+      "avgPrice": "평단가",
+      "currentPrice": "현재가",
+      "value": "평가금액",
+      "pnl": "평가손익",
+      "pnlPercent": "수익률"
+    },
+    "performance": "성과 분석",
+    "cumReturn": "누적 수익률",
+    "period": {
+      "30d": "30일",
+      "60d": "60일",
+      "90d": "90일"
+    },
+    "metrics": {
+      "totalReturn": "총 수익률",
+      "mdd": "최대 낙폭 (MDD)",
+      "sharpeRatio": "샤프 비율",
+      "profitFactor": "Profit Factor",
+      "winRate": "승률",
+      "totalTrades": "총 거래수",
+      "avgHoldingDays": "평균 보유일"
+    }
+  },
   "bots": {
     "title": "봇 관리",
     "description": "자동매매 봇을 관리하고 새로운 봇을 생성하세요",

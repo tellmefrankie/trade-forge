@@ -1,8 +1,15 @@
 import { NavItem } from '@/types';
 
-export const navItems: NavItem[] = [
+// titleKey maps to messages/[locale].json > nav.[key]
+export interface NavItemWithI18n extends NavItem {
+  titleKey: string;
+  items?: NavItemWithI18n[];
+}
+
+export const navItems: NavItemWithI18n[] = [
   {
     title: '대시보드',
+    titleKey: 'dashboard',
     url: '/dashboard',
     icon: 'dashboard',
     isActive: false,
@@ -11,6 +18,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: '매매 내역',
+    titleKey: 'trades',
     url: '/trades',
     icon: 'trades',
     isActive: false,
@@ -19,6 +27,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: '봇 관리',
+    titleKey: 'bots',
     url: '/bots',
     icon: 'bot',
     isActive: false,
@@ -27,6 +36,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: '포트폴리오',
+    titleKey: 'portfolio',
     url: '/portfolio',
     icon: 'portfolio',
     isActive: false,
@@ -35,6 +45,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: '백테스트',
+    titleKey: 'backtest',
     url: '/backtest',
     icon: 'backtest',
     isActive: false,
@@ -42,17 +53,20 @@ export const navItems: NavItem[] = [
   },
   {
     title: '설정',
+    titleKey: 'settings',
     url: '#',
     icon: 'settings',
     isActive: false,
     items: [
       {
         title: 'API 키 관리',
+        titleKey: 'apiKeys',
         url: '/settings/api-keys',
         icon: 'key'
       },
       {
         title: '알림 설정',
+        titleKey: 'alerts',
         url: '/settings/alerts',
         icon: 'bell'
       }

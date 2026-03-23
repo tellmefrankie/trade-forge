@@ -1,35 +1,38 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { useMemo } from 'react';
-
-const routeLabels: Record<string, string> = {
-  dashboard: '대시보드',
-  trades: '매매 내역',
-  bots: '봇 관리',
-  portfolio: '포트폴리오',
-  backtest: '백테스트',
-  settings: '설정',
-  'api-keys': 'API 키 관리',
-  alerts: '알림 설정'
-};
 
 interface BreadcrumbItem {
   title: string;
   link: string;
 }
 
+const routeKeyMap: Record<string, string> = {
+  dashboard: 'dashboard',
+  trades: 'trades',
+  bots: 'bots',
+  portfolio: 'portfolio',
+  backtest: 'backtest',
+  settings: 'settings',
+  'api-keys': 'apiKeys',
+  alerts: 'alerts'
+};
+
 export function useBreadcrumbs(): BreadcrumbItem[] {
   const pathname = usePathname();
+  const t = useTranslations('nav');
 
   return useMemo(() => {
     const segments = pathname.split('/').filter(Boolean);
     return segments.map((segment, index) => {
       const path = '/' + segments.slice(0, index + 1).join('/');
+      const key = routeKeyMap[segment];
       return {
-        title: routeLabels[segment] || segment,
+        title: key ? t(key) : segment,
         link: path
       };
     });
-  }, [pathname]);
+  }, [pathname, t]);
 }

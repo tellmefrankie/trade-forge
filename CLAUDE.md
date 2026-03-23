@@ -385,12 +385,12 @@ TradeForge (로고)
 - [x] 빌드 확인
 **PR**: `feat/backtest-and-settings` → main (PR #6 머지 완료)
 
-### 7단계: 배포 + README
-- [ ] Vercel 배포
-- [ ] 각 주요 페이지 스크린샷 캡처
-- [ ] README.md 작성 (스크린샷, 기능 목록, 기술 스택, 라이브 데모 링크)
-- [ ] 탭 타이틀: "TradeForge — 자동매매 모니터링 대시보드"
-**PR**: `docs/readme-and-deploy` → main
+### 7단계: 배포 + README ✅ 완료
+- [ ] Vercel 배포 (사용자 직접 진행 예정)
+- [x] 각 주요 페이지 스크린샷 캡처 (8장)
+- [x] README.md 작성 (스크린샷, 기능 목록, 기술 스택, 라이브 데모 링크)
+- [x] 탭 타이틀: "TradeForge — 자동매매 모니터링 대시보드"
+**PR**: `docs/readme-and-deploy` → main (PR #7 머지 완료)
 
 ---
 

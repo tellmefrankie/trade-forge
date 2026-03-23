@@ -27,6 +27,50 @@
     "last30d": "최근 30일",
     "running": "실행 중"
   },
+  "trades": {
+    "title": "매매 내역",
+    "description": "전체 매매 기록을 확인하고 분석하세요",
+    "filter": {
+      "period": "기간",
+      "today": "오늘",
+      "thisWeek": "이번 주",
+      "thisMonth": "이번 달",
+      "all": "전체",
+      "symbol": "종목",
+      "allSymbols": "전체 종목",
+      "type": "유형",
+      "allTypes": "전체",
+      "buy": "매수",
+      "sell": "매도",
+      "result": "결과",
+      "allResults": "전체",
+      "profit": "수익",
+      "loss": "손실"
+    },
+    "table": {
+      "time": "체결시간",
+      "symbol": "종목",
+      "type": "매수/매도",
+      "price": "가격",
+      "amount": "수량",
+      "total": "거래금액",
+      "fee": "수수료",
+      "pnl": "실현손익",
+      "pnlPercent": "수익률",
+      "bot": "봇",
+      "buy": "매수",
+      "sell": "매도",
+      "noResults": "검색 결과가 없습니다"
+    },
+    "pagination": {
+      "showing": "{from}~{to} / 총 {total}건",
+      "prev": "이전",
+      "next": "다음"
+    },
+    "export": "CSV 내보내기",
+    "dailyPnl": "일별 수익 현황",
+    "last30d": "최근 30일"
+  },
   "language": {
     "ko": "한국어",
     "en": "English"

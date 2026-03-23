@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
-  title: 'TradeForge — 대시보드',
+  title: 'TradeForge — 자동매매 모니터링 대시보드',
   description: '자동매매 트레이딩 모니터링 대시보드'
 };
 

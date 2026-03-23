@@ -27,6 +27,50 @@
     "last30d": "Last 30d",
     "running": "Running"
   },
+  "trades": {
+    "title": "Trade History",
+    "description": "View and analyze all trade records",
+    "filter": {
+      "period": "Period",
+      "today": "Today",
+      "thisWeek": "This Week",
+      "thisMonth": "This Month",
+      "all": "All",
+      "symbol": "Pair",
+      "allSymbols": "All Pairs",
+      "type": "Side",
+      "allTypes": "All",
+      "buy": "Buy",
+      "sell": "Sell",
+      "result": "Result",
+      "allResults": "All",
+      "profit": "Profit",
+      "loss": "Loss"
+    },
+    "table": {
+      "time": "Time",
+      "symbol": "Pair",
+      "type": "Side",
+      "price": "Price",
+      "amount": "Amount",
+      "total": "Total",
+      "fee": "Fee",
+      "pnl": "P&L",
+      "pnlPercent": "Return",
+      "bot": "Bot",
+      "buy": "BUY",
+      "sell": "SELL",
+      "noResults": "No results found"
+    },
+    "pagination": {
+      "showing": "{from}–{to} of {total}",
+      "prev": "Prev",
+      "next": "Next"
+    },
+    "export": "Export CSV",
+    "dailyPnl": "Daily P&L",
+    "last30d": "Last 30 days"
+  },
   "language": {
     "ko": "한국어",
     "en": "English"

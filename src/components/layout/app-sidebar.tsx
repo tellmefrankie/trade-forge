@@ -19,6 +19,7 @@ import {
   SidebarRail
 } from '@/components/ui/sidebar';
 import { navItems } from '@/config/nav-config';
+import { useTranslations } from 'next-intl';
 import { IconChevronRight } from '@tabler/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -28,6 +29,8 @@ import { Icons } from '../icons';
 
 export default function AppSidebar() {
   const pathname = usePathname();
+  const t = useTranslations('nav');
+  const tCommon = useTranslations('common');
 
   return (
     <Sidebar collapsible='icon'>
@@ -46,9 +49,9 @@ export default function AppSidebar() {
                   />
                 </div>
                 <div className='flex flex-col gap-0.5 leading-none'>
-                  <span className='font-semibold'>TradeForge</span>
+                  <span className='font-semibold'>{tCommon('appName')}</span>
                   <span className='text-muted-foreground text-xs'>
-                    Trading Terminal
+                    {tCommon('tagline')}
                   </span>
                 </div>
               </Link>
@@ -58,13 +61,14 @@ export default function AppSidebar() {
       </SidebarHeader>
       <SidebarContent className='overflow-x-hidden'>
         <SidebarGroup>
-          <SidebarGroupLabel>트레이딩</SidebarGroupLabel>
+          <SidebarGroupLabel>{t('trading')}</SidebarGroupLabel>
           <SidebarMenu>
             {navItems.map((item) => {
               const Icon = item.icon ? Icons[item.icon] : Icons.logo;
+              const label = t(item.titleKey);
               return item?.items && item?.items?.length > 0 ? (
                 <Collapsible
-                  key={item.title}
+                  key={item.titleKey}
                   asChild
                   defaultOpen={item.isActive}
                   className='group/collapsible'
@@ -72,24 +76,24 @@ export default function AppSidebar() {
                   <SidebarMenuItem>
                     <CollapsibleTrigger asChild>
                       <SidebarMenuButton
-                        tooltip={item.title}
+                        tooltip={label}
                         isActive={pathname === item.url}
                       >
                         {item.icon && <Icon />}
-                        <span>{item.title}</span>
+                        <span>{label}</span>
                         <IconChevronRight className='ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90' />
                       </SidebarMenuButton>
                     </CollapsibleTrigger>
                     <CollapsibleContent>
                       <SidebarMenuSub>
                         {item.items?.map((subItem) => (
-                          <SidebarMenuSubItem key={subItem.title}>
+                          <SidebarMenuSubItem key={subItem.titleKey}>
                             <SidebarMenuSubButton
                               asChild
                               isActive={pathname === subItem.url}
                             >
                               <Link href={subItem.url}>
-                                <span>{subItem.title}</span>
+                                <span>{t(subItem.titleKey)}</span>
                               </Link>
                             </SidebarMenuSubButton>
                           </SidebarMenuSubItem>
@@ -99,15 +103,15 @@ export default function AppSidebar() {
                   </SidebarMenuItem>
                 </Collapsible>
               ) : (
-                <SidebarMenuItem key={item.title}>
+                <SidebarMenuItem key={item.titleKey}>
                   <SidebarMenuButton
                     asChild
-                    tooltip={item.title}
+                    tooltip={label}
                     isActive={pathname === item.url}
                   >
                     <Link href={item.url}>
                       <Icon />
-                      <span>{item.title}</span>
+                      <span>{label}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

@@ -160,6 +160,62 @@
       "submit": "Create Bot"
     }
   },
+  "backtest": {
+    "title": "Backtest",
+    "description": "Simulate strategies against historical data",
+    "settings": "Settings",
+    "strategy": "Strategy",
+    "symbol": "Pair",
+    "period": "Period",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "initialCapital": "Initial Capital ($)",
+    "run": "Run Backtest",
+    "running": "Running...",
+    "result": "Result",
+    "returnCurve": "Return Curve",
+    "strategy_line": "Strategy",
+    "benchmark": "Buy & Hold (Benchmark)",
+    "summary": {
+      "totalReturn": "Total Return",
+      "mdd": "Max Drawdown",
+      "trades": "Total Trades",
+      "winRate": "Win Rate",
+      "avgHolding": "Avg Holding",
+      "days": "days"
+    },
+    "createBot": "Create Bot with this Config"
+  },
+  "settings": {
+    "apiKeys": {
+      "title": "API Key Management",
+      "description": "Register and manage your exchange API keys",
+      "exchange": "Exchange",
+      "apiKey": "API Key",
+      "secretKey": "Secret Key",
+      "add": "Add Key",
+      "test": "Test Connection",
+      "testSuccess": "Connected",
+      "delete": "Delete",
+      "registered": "Registered Keys",
+      "noKeys": "No API keys registered",
+      "encryption": "API keys are encrypted with AES-256"
+    },
+    "alerts": {
+      "title": "Alert Settings",
+      "description": "Configure Telegram notifications",
+      "telegramToken": "Telegram Bot Token",
+      "tokenPlaceholder": "123456789:AAH...",
+      "save": "Save",
+      "conditions": "Alert Conditions",
+      "onTrade": "On Trade Execution",
+      "onProfit": "On Profit Target",
+      "onStopLoss": "On Stop Loss",
+      "onError": "On Bot Error",
+      "history": "Alert History",
+      "noHistory": "No alert history"
+    }
+  },
   "language": {
     "ko": "한국어",
     "en": "English"

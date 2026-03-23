@@ -325,18 +325,18 @@ TradeForge (로고)
 
 ## 작업 단계 (순서대로 진행)
 
-### 1단계: 프로젝트 초기화 + 다크 트레이딩 테마
-- [ ] next-shadcn-dashboard-starter clone
-- [ ] 불필요한 데모 페이지/컴포넌트 제거
-- [ ] 다크 테마 기본 적용 (위 컬러 팔레트 적용)
-- [ ] 사이드바 메뉴 트레이딩 구조로 변경
-- [ ] 로고 "TradeForge" 텍스트 + CodeFoundry 아이콘
-- [ ] lightweight-charts 설치 및 기본 캔들스틱 차트 렌더링 테스트
-- [ ] next-intl 설치 및 세팅 (messages/ko.json, messages/en.json 기본 구조)
-- [ ] 헤더에 언어 토글 버튼 (🇰🇷/🇺🇸) 추가
-- [ ] Google Fonts에서 JetBrains Mono 또는 IBM Plex Mono 추가
-- [ ] 빌드 확인 + 린트 통과
-**PR**: `feat/init-dark-trading-theme` → main
+### 1단계: 프로젝트 초기화 + 다크 트레이딩 테마 ✅ 완료
+- [x] next-shadcn-dashboard-starter clone
+- [x] 불필요한 데모 페이지/컴포넌트 제거
+- [x] 다크 테마 기본 적용 (위 컬러 팔레트 적용)
+- [x] 사이드바 메뉴 트레이딩 구조로 변경
+- [x] 로고 "TradeForge" 텍스트 + CodeFoundry 아이콘
+- [x] lightweight-charts 설치 및 기본 캔들스틱 차트 렌더링 테스트
+- [x] next-intl 설치 및 세팅 (messages/ko.json, messages/en.json 기본 구조)
+- [x] 헤더에 언어 토글 버튼 (🇰🇷/🇺🇸) 추가
+- [x] Google Fonts에서 JetBrains Mono 추가
+- [x] 빌드 확인
+**PR**: `feat/init-dark-trading-theme` → main (PR #1 머지 완료)
 
 ### 2단계: 대시보드 메인
 - [ ] 통계 카드 4개 (총 자산, 오늘 손익, 활성 봇, 승률)

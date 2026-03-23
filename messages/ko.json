@@ -71,6 +71,63 @@
     "dailyPnl": "일별 수익 현황",
     "last30d": "최근 30일"
   },
+  "bots": {
+    "title": "봇 관리",
+    "description": "자동매매 봇을 관리하고 새로운 봇을 생성하세요",
+    "createBot": "봇 생성",
+    "status": {
+      "running": "실행 중",
+      "stopped": "중지",
+      "error": "에러"
+    },
+    "card": {
+      "strategy": "전략",
+      "symbol": "종목",
+      "invest": "투자금",
+      "todayTrades": "오늘 거래",
+      "todayPnl": "오늘 수익",
+      "totalPnl": "총 수익",
+      "totalTrades": "총 거래",
+      "winRate": "승률",
+      "stopLoss": "손절",
+      "takeProfit": "익절",
+      "created": "생성일",
+      "runningDays": "운영일",
+      "days": "일",
+      "start": "시작",
+      "stop": "중지",
+      "delete": "삭제"
+    },
+    "create": {
+      "title": "새 봇 생성",
+      "strategy": "전략 선택",
+      "symbol": "종목 선택",
+      "investAmount": "투자금 (₩)",
+      "stopLoss": "손절 (%)",
+      "takeProfit": "익절 (%)",
+      "params": "전략 파라미터",
+      "grid": {
+        "upperPrice": "상단가",
+        "lowerPrice": "하단가",
+        "gridCount": "그리드 수"
+      },
+      "rsi": {
+        "period": "RSI 기간",
+        "overbought": "과매수 기준",
+        "oversold": "과매도 기준"
+      },
+      "ma": {
+        "shortPeriod": "단기 기간",
+        "longPeriod": "장기 기간"
+      },
+      "bollinger": {
+        "period": "기간",
+        "multiplier": "표준편차 배수"
+      },
+      "cancel": "취소",
+      "submit": "봇 생성"
+    }
+  },
   "language": {
     "ko": "한국어",
     "en": "English"

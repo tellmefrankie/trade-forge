@@ -71,6 +71,63 @@
     "dailyPnl": "Daily P&L",
     "last30d": "Last 30 days"
   },
+  "bots": {
+    "title": "Bot Management",
+    "description": "Manage your trading bots and create new ones",
+    "createBot": "Create Bot",
+    "status": {
+      "running": "Running",
+      "stopped": "Stopped",
+      "error": "Error"
+    },
+    "card": {
+      "strategy": "Strategy",
+      "symbol": "Pair",
+      "invest": "Investment",
+      "todayTrades": "Today Trades",
+      "todayPnl": "Today P&L",
+      "totalPnl": "Total P&L",
+      "totalTrades": "Total Trades",
+      "winRate": "Win Rate",
+      "stopLoss": "Stop Loss",
+      "takeProfit": "Take Profit",
+      "created": "Created",
+      "runningDays": "Running",
+      "days": "days",
+      "start": "Start",
+      "stop": "Stop",
+      "delete": "Delete"
+    },
+    "create": {
+      "title": "Create New Bot",
+      "strategy": "Select Strategy",
+      "symbol": "Select Pair",
+      "investAmount": "Investment ($)",
+      "stopLoss": "Stop Loss (%)",
+      "takeProfit": "Take Profit (%)",
+      "params": "Strategy Parameters",
+      "grid": {
+        "upperPrice": "Upper Price",
+        "lowerPrice": "Lower Price",
+        "gridCount": "Grid Count"
+      },
+      "rsi": {
+        "period": "RSI Period",
+        "overbought": "Overbought",
+        "oversold": "Oversold"
+      },
+      "ma": {
+        "shortPeriod": "Short Period",
+        "longPeriod": "Long Period"
+      },
+      "bollinger": {
+        "period": "Period",
+        "multiplier": "Std Dev Multiplier"
+      },
+      "cancel": "Cancel",
+      "submit": "Create Bot"
+    }
+  },
   "language": {
     "ko": "한국어",
     "en": "English"

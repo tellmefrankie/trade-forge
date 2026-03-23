@@ -376,13 +376,14 @@ TradeForge (로고)
 - [x] 빌드 확인
 **PR**: `feat/portfolio-analysis` → main (PR #5 머지 완료)
 
-### 6단계: 백테스트 + 설정
-- [ ] 백테스트 설정 패널
-- [ ] 백테스트 결과 차트 + 벤치마크 비교
-- [ ] API 키 관리 UI
-- [ ] 알림 설정 UI
-- [ ] 빌드 확인 + 린트 통과
-**PR**: `feat/backtest-and-settings` → main
+### 6단계: 백테스트 + 설정 ✅ 완료
+- [x] 백테스트 설정 패널 (전략/종목/기간/자본)
+- [x] 백테스트 결과 차트 + 벤치마크 비교 + 결과 카드 5개
+- [x] API 키 관리 UI (등록/마스킹/테스트/삭제)
+- [x] 알림 설정 UI (텔레그램 토큰, 조건 토글, 이력 로그)
+- [x] i18n 적용
+- [x] 빌드 확인
+**PR**: `feat/backtest-and-settings` → main (PR #6 머지 완료)
 
 ### 7단계: 배포 + README
 - [ ] Vercel 배포

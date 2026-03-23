@@ -1,17 +1,24 @@
+import { format } from 'date-fns';
+
 export function formatDate(
-  date: Date | string | number | undefined,
-  opts: Intl.DateTimeFormatOptions = {}
+  date: Date | string | undefined,
+  pattern = 'yyyy.MM.dd HH:mm'
 ) {
   if (!date) return '';
+  return format(new Date(date), pattern);
+}
 
-  try {
-    return new Intl.DateTimeFormat('en-US', {
-      month: opts.month ?? 'long',
-      day: opts.day ?? 'numeric',
-      year: opts.year ?? 'numeric',
-      ...opts
-    }).format(new Date(date));
-  } catch (_err) {
-    return '';
+export function formatCurrency(
+  value: number,
+  locale: 'ko' | 'en' = 'ko'
+): string {
+  if (locale === 'ko') {
+    return `₩${value.toLocaleString('ko-KR')}`;
   }
+  return `$${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
+export function formatPercent(value: number): string {
+  const prefix = value >= 0 ? '+' : '';
+  return `${prefix}${value.toFixed(2)}%`;
 }

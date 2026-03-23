@@ -8,10 +8,7 @@ export function formatDate(
   return format(new Date(date), pattern);
 }
 
-export function formatCurrency(
-  value: number,
-  locale: 'ko' | 'en' = 'ko'
-): string {
+export function formatCurrency(value: number, locale: string = 'ko'): string {
   if (locale === 'ko') {
     return `₩${value.toLocaleString('ko-KR')}`;
   }

@@ -1,0 +1,34 @@
+{
+  "common": {
+    "appName": "TradeForge",
+    "tagline": "Crypto Trading Bot Dashboard"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "trades": "Trade History",
+    "bots": "Bot Management",
+    "portfolio": "Portfolio",
+    "backtest": "Backtest",
+    "settings": "Settings",
+    "apiKeys": "API Keys",
+    "alerts": "Alert Settings",
+    "trading": "Trading"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "description": "Crypto Trading Bot Monitoring Dashboard",
+    "totalAssets": "Total Assets",
+    "todayPnl": "Today's P&L",
+    "activeBots": "Active Bots",
+    "winRate": "Win Rate",
+    "recentTrades": "Recent Trades",
+    "botStatus": "Bot Status",
+    "last24h": "24h",
+    "last30d": "Last 30d",
+    "running": "Running"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English"
+  }
+}
